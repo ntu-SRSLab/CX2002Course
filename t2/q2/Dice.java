@@ -1,16 +1,16 @@
 public class Dice {
-  private int valueOfDice=0;
+    private int valueOfDice=0;
 	
-  public Dice() {
+    public Dice() {
 
-  }
-  public void setDiceValue() {
+    }
+    public void setDiceValue() {
 
-  }
-  public int getDiceValue() {
+    }
+    public int getDiceValue() {
 
-  }
-  public void printDiceValue() {
+    }
+    public void printDiceValue() {
 
-  }
+    }
 }
