@@ -1,9 +1,11 @@
 public class Rectangle extends Polygon {
   public Rectangle(String theName, float theWidth,
-                   float theHeight)
-  {
+                   float theHeight) {
     super(theName, theWidth, theHeight) ;
     this.polytype = KindofPolygon.POLY_RECT;
   }
-  public float calArea() { return width * height; }
+
+  public float calArea() {
+    return width * height;
+  }
 }

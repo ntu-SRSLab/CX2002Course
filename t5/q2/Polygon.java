@@ -1,6 +1,8 @@
 public class Polygon {
-  public enum KindofPolygon { POLY_PLAIN, POLY_RECT,
-                              POLY_TRIANG};
+  public enum KindofPolygon {
+    POLY_PLAIN, POLY_RECT, POLY_TRIANG
+  };
+
   protected String name;
   protected float width;
   protected float height;
