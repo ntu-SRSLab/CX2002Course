@@ -38,14 +38,14 @@ public :
 
   void input(float u, float v);
 
-  virtual void print(float);
+  virtual void print();
 };
 
 void A::print(void) {
   cout << "A values: " << a << " " << b << "\n" ;
 }
 
-void B::print(float) {
+void B::print() {
   cout << "B values : " << p << " " << q << "\n" ;
 }
 
