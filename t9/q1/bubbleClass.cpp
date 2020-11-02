@@ -13,7 +13,7 @@ public :
     int t ;
 
     for(int i = _size - 2; i >= 0; i--)
-			{
+      {
         for(int j = 0; j <= i; j++)
           {
             if(_numArray[j] > _numArray[j+1])
