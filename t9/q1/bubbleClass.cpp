@@ -26,7 +26,7 @@ public :
       }
   } //end function.
 
-  ~BubbleSort() { delete _numArray ; }  // destructor
+  ~BubbleSort() { }  // destructor
 };
 
 int main()
@@ -36,20 +36,20 @@ int main()
   std::cout << "\n\n Enter number of Integer elements to be sorted: ";
   std::cin >> n;
 
-  for(i=0; i<=n-1; i++)
+  for(i = 0; i <= n-1; i++)
     {
       std::cout << "\n\n Enter integer value for element no." << i + 1 << " ";
       std::cin >> a[i];
     }
 
-  // BubbleSort *b = new BubbleSort(a,n);
+  // BubbleSort *b = new BubbleSort(a, n);
   // b->sort();
 
   BubbleSort b(a, n);
   b.sort() ;
 
   std::cout << "\n\n Finally sorted array is: ";
-  for(i=0; i <= n-1; i++)
+  for(i = 0; i <= n-1; i++)
     std::cout << a[i] << " ";
 
   // delete b ;
