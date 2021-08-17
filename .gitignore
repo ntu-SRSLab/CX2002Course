@@ -24,3 +24,8 @@ hs_err_pid*
 
 # Temp files
 **/*~
+
+.DS_Store
+t2/.DS_Store
+t3/.DS_Store
+t5/.DS_Store
