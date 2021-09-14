@@ -1,21 +1,21 @@
 import java.util.Scanner;
 
 public class VendingMachine {
-  Drink[] drinks ;  // object composition - relevant
+  Drink[] drinks; // Object composition - relevant
   double drinkCost = 0.0;
   int drinkSelection = 0;
 
   public VendingMachine() {
-    drinks = new Drink[3];   // future improvement can just read from file or DB
+    drinks = new Drink[3]; // future improvement can just read from file or DB
     drinks[0] = new Drink("Beer", 3.00) ;
     drinks[1] = new Drink("Coke", 1.00) ;
     drinks[2] = new Drink("Green Tea", 5.00) ;
-    // future improvement to add 'quantity'
+    // Future improvement to add 'quantity'
   }
 
   public void start() {
-    // all drinkCost can be removed since the instance attribute holds the value
-    // the rest of method can be declared as private
+    // All drinkCost can be removed since the instance attribute holds the value
+    // The rest of the methods can be declared as private
     // VendingMachine should know how it works.
     drinkCost = selectDrink();
     double amt = insertCoins(drinkCost);
@@ -28,7 +28,7 @@ public class VendingMachine {
 
     System.out.println("====== Vending Machine ======");
     for (int i = 0 ; i < drinks.length ; i++)
-      System.out.println("|"+(i+1) + " Buy " + drinks[i].getName() +
+      System.out.println("|" + (i+1) + " Buy " + drinks[i].getName() +
                          String.format("  %.2f  ", drinks[i].getCost()) + "  |");
     System.out.println("|============================");
 
@@ -42,7 +42,7 @@ public class VendingMachine {
   }
 
   public double insertCoins (double drinkCost) {
-    double amount=0.0;
+    double amount = 0.0;
 
     Scanner sc = new Scanner(System.in);
     System.out.println("Please insert coins: ");
@@ -80,9 +80,9 @@ public class VendingMachine {
 
     if (amt > drinkCost) {
       change = amt - drinkCost;
-      //System.out.printf("Change: $ %.2f \n", change);
+      // System.out.printf("Change: $ %.2f \n", change);
       System.out.println("Change : $" +  String.format("%.2f", change));
-      //NumberFormat formatter = NumberFormat.getCurrencyInstance();
+      // NumberFormat formatter = NumberFormat.getCurrencyInstance();
       // System.out.println(formatter.format(money));
     }
   }

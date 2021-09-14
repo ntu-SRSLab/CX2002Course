@@ -24,6 +24,8 @@ public class Circle {
     return Math.PI * Math.pow(radius, 2);
   }
   public String toString(){
-    return "Circle of radius " + radius + " at point [" + centre.getX() + "," + centre.getY() + "]";
+    return "Circle of radius " + radius
+	+ " at point [" + centre.getX() + ","
+	+ centre.getY() + "]";
   }
 }

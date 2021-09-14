@@ -16,6 +16,7 @@ public class Circle extends Point {
     return Math.PI * Math.pow(radius,2);
   }
   public String toString(){
-    return "Circle of radius " + radius + " at point [" + x + "," + y + "]";
+    return "Circle of radius " + radius
+	+ " at point [" + x + "," + y + "]";
   }
 }
