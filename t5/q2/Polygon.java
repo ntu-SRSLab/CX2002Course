@@ -23,12 +23,15 @@ public class Polygon {
     polytype = value;
   }
 
-  public String getName() { return name; }
+  public String getName() {
+    return name;
+  }
 
-  public float calArea() { return 0; }
+  public float calArea() {
+    return 0;
+  }
 
-  public void printWidthHeight( ) {
-    System.out.println("Width = " + width + " Height = " +
-                       height);
+  public void printWidthHeight() {
+    System.out.println("Width = " + width + " Height = " + height);
   }
 }

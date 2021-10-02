@@ -24,6 +24,8 @@ hs_err_pid*
 
 # Temp files
 **/*~
+**/a.out
+**/.vscode
 
 .DS_Store
 t2/.DS_Store

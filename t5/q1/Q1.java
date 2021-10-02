@@ -43,7 +43,7 @@ class G extends E {
 public class Q1 {
   public static void main(String[] args) {
     A a = new C();
-    G g = (G)a;
+    G g = (G) a;
     g.print("hello", "there");
   }
 }
