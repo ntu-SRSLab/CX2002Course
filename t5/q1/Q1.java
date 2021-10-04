@@ -52,14 +52,14 @@ public class Q1 {
     ClassF z = new ClassF();
 
     // Q1(a)
-    z.print(9);
+    z.print(9); // ClassF
     // Q1(b)
-    z.print(2, "Cx2002");
+    z.print(2, "Cx2002"); // ClassA
     // Q1(c)
-    z.print("Object");
+    z.print("Object"); // ClassE
     // Q1(d)
-    z.print("OODP", "Java");
+    z.print("OODP", "Java"); // ClassC
     // Q1(e)
-    z.print("OODP", 2002);
+    // z.print("OODP", 2002); // Compilation error!
   }
 }

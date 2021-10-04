@@ -1,4 +1,4 @@
-public class Polygon {
+public abstract class Polygon {
   public enum KindofPolygon {
     POLY_PLAIN, POLY_RECT, POLY_TRIANG
   };
@@ -27,9 +27,7 @@ public class Polygon {
     return name;
   }
 
-  public float calArea() {
-    return 0;
-  }
+  abstract public float calArea();
 
   public void printWidthHeight() {
     System.out.println("Width = " + width + " Height = " + height);

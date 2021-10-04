@@ -52,15 +52,15 @@ class ClassG extends ClassE {
 public class Q2b {
   public static void main(String[] args) {
     // Q2b.i
-    ClassC c = new ClassD();
-    c.print("hello", "there");
+    ClassC c = new ClassD(); // upcast -- ok
+    c.print("hello", "there"); // ok, ClassC
 
-    // Q2b.ii
-    ClassA a1 = new ClassC();
-    a1.print(1, "there");
+    // // Q2b.ii
+    // ClassA a1 = new ClassC(); // upcast, instantiate abstract class? No!
+    // a1.print(1, "there");
 
-    // Q2b.iii
-    ClassA a2 = new ClassF();
-    a2.print("hello", "there");
+    // // Q2b.iii
+    // ClassA a2 = new ClassF(); // upcast -- ok
+    // a2.print("hello", "there"); // calling print(String, String) on ClassA? No! Compiler will say no
   }
 }
