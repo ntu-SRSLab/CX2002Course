@@ -47,19 +47,35 @@ class ClassG extends ClassE {
   }
 }
 
-public class Q1 {
+public class Q2c {
   public static void main(String[] args) {
-    ClassF z = new ClassF();
+    // Q2c.i
+    ClassC c = new ClassD();
+    ClassE e = c;
 
-    // Q1(a)
-    z.print(9);
-    // Q1(b)
-    z.print(2, "Cx2002");
-    // Q1(c)
-    z.print("Object");
-    // Q1(d)
-    z.print("OODP", "Java");
-    // Q1(e)
-    z.print("OODP", 2002);
+    // Q2c.ii
+    ClassB b = new ClassE();
+    b.print("hello");
+
+    // Q2c.iii
+    ClassA a1 = new ClassF();
+    a1.print(12, "there");
+    a1.print(88);
+
+    // Q2.iv
+    ClassA a2 = new ClassC();
+    ClassG g1 = (ClassG)a2;
+    g1.print("hello");
+
+    // Q2.v
+    ClassA a3 = new ClassC();
+    ClassG g2 = (ClassG)a3;
+    g2.print("hello", "there");
+
+    // Q2.vi
+    ClassA a4 = new ClassF();
+    ClassC f = (ClassC)a4;
+    f.print(88, "there");
+    // f.print("hello", "there");
   }
 }

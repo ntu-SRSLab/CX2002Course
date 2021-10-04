@@ -13,10 +13,7 @@ class ClassB extends ClassA {
 }
 
 class ClassC extends ClassA {
-  void print(String x, String y) {
-    System.out.print("ClassC: ");
-    System.out.println(x + ", " + y);
-  }
+  abstract void print(String x, String y);
 }
 
 class ClassD extends ClassC {
@@ -47,19 +44,7 @@ class ClassG extends ClassE {
   }
 }
 
-public class Q1 {
+public class Q2a {
   public static void main(String[] args) {
-    ClassF z = new ClassF();
-
-    // Q1(a)
-    z.print(9);
-    // Q1(b)
-    z.print(2, "Cx2002");
-    // Q1(c)
-    z.print("Object");
-    // Q1(d)
-    z.print("OODP", "Java");
-    // Q1(e)
-    z.print("OODP", 2002);
   }
 }
