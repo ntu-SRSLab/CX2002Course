@@ -53,7 +53,7 @@ public class Q2b {
   public static void main(String[] args) {
     // Q2b.i
     ClassC c = new ClassD(); // upcast -- ok
-    c.print("hello", "there"); // ok, ClassC
+    c.print("hello", "there"); // ok, ClassD
 
     // // Q2b.ii
     // ClassA a1 = new ClassC(); // upcast, instantiate abstract class? No!
