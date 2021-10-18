@@ -1,4 +1,5 @@
 public class Check {
+
   public double getAmount() {
     return 100; // any valid double
   }
