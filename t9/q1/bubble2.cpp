@@ -1,9 +1,9 @@
-#include <stdio.h>
+#include <iostream>
 
+// using namespace std;
 void bubble(int a[], int n)
 {
   int i, j, t;
-
   for (i = n - 2; i >= 0; i--)
   {
     for (j = 0; j <= i; j++)
@@ -22,18 +22,18 @@ int main()
 {
   int a[100], n, i;
 
-  printf("\n\n Enter number of Integer elements to be sorted: ");
-  scanf("%d", &n);
+  std::cout << "\n\n Enter number of Integer elements to be sorted: ";
+  std::cin >> n;
 
   for (i = 0; i <= n - 1; i++)
   {
-    printf("\n\n Enter integer value for element no.%d : ", i + 1);
-    scanf("%d", &a[i]);
+    std::cout << "\n\n Enter integer value for element no." << i + 1 << " ";
+    std::cin >> a[i];
   }
 
   bubble(a, n);
 
-  printf("\n\n Finally sorted array is: ");
+  std::cout << "\n\n Finally sorted array is: ";
   for (i = 0; i <= n - 1; i++)
-    printf("%d  ", a[i]);
+    std::cout << a[i] << " ";
 } //end program.
