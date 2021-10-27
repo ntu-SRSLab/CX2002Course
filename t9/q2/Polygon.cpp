@@ -3,10 +3,16 @@
 
 using namespace std;
 
-enum KindofPolygon { POLY_PLAIN, POLY_RECT, POLY_TRIANG };
-string StringKindofPolygon[] = { "POLY_PLAIN", "POLY_RECT", "POLY_TRIANG"};
+enum KindofPolygon
+{
+  POLY_PLAIN,
+  POLY_RECT,
+  POLY_TRIANG
+};
+string StringKindofPolygon[] = {"POLY_PLAIN", "POLY_RECT", "POLY_TRIANG"};
 
-class Polygon {
+class Polygon
+{
 
 protected:
   string name;
@@ -15,30 +21,35 @@ protected:
   KindofPolygon polytype;
 
 public:
-  Polygon(string theName, float theWidth, float theHeight) : name(theName) {
+  Polygon(string theName, float theWidth, float theHeight) : name(theName)
+  {
     width = theWidth;
     height = theHeight;
     polytype = POLY_PLAIN;
   }
-  
-  KindofPolygon getPolytype() {
+
+  KindofPolygon getPolytype()
+  {
     return polytype;
   }
 
-  void setPolytype(KindofPolygon value) {
+  void setPolytype(KindofPolygon value)
+  {
     polytype = value;
   }
-  
+
   string getName() { return name; }
 
   virtual float calArea() = 0;
 
-  void printWidthHeight( ) {
+  void printWidthHeight()
+  {
     cout << "Width = " << width << " Height = " << height << endl;
   }
 };
 
-class Rectangle : public Polygon {
+class Rectangle : public Polygon
+{
 public:
   Rectangle(string theName, float theWidth,
             float theHeight) : Polygon(theName, theWidth, theHeight)
@@ -49,10 +60,11 @@ public:
   float calArea() { return width * height; }
 };
 
-class Triangle : public Polygon  {
+class Triangle : public Polygon
+{
 public:
-  Triangle (string theName, float theWidth,
-            float theHeight) : Polygon(theName, theWidth, theHeight)
+  Triangle(string theName, float theWidth,
+           float theHeight) : Polygon(theName, theWidth, theHeight)
   {
     polytype = POLY_TRIANG;
   }
@@ -60,15 +72,18 @@ public:
   float calArea() { return 0.5f * width * height; }
 };
 
-class TestPolygon {
+class TestPolygon
+{
 public:
-  static void printArea(Polygon& poly) {
-    float area = poly.calArea( );
-    cout <<"The area of the " << StringKindofPolygon[poly.getPolytype()]  <<  " is " << area << endl;
+  static void printArea(Polygon &poly)
+  {
+    float area = poly.calArea();
+    cout << "The area of the " << StringKindofPolygon[poly.getPolytype()] << " is " << area << endl;
   }
 };
 
-int main() {
+int main()
+{
 
   Rectangle rect1("Rect1", 3.0f, 4.0f);
   rect1.printWidthHeight();
