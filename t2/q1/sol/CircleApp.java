@@ -2,12 +2,12 @@ import java.util.Scanner;
 
 public class CircleApp
 {
-    public static void main(String[] args) {
-	Circle cir = null;
-	int option;
-	double radius = 0.0;
-	Scanner sc = new Scanner(System.in);
-	do {
+  public static void main(String[] args) {
+    Circle cir = null;
+    int option;
+    double radius = 0.0;
+    Scanner sc = new Scanner(System.in);
+    do {
 	    System.out.println("==== Circle Computation =====");
 	    System.out.println("|1. Create a new circle     |");
 	    System.out.println("|2. Print Area              |");
@@ -17,20 +17,20 @@ public class CircleApp
 	    System.out.println("Choose option (1-3):");
 	    option = sc.nextInt();
 	    if (option == 1) {
-		System.out.println("Enter the radius to compute the area and circumference");
-		radius = sc.nextDouble();	
-		cir = new Circle(radius);
-		System.out.println("A new circle is created");
+        System.out.println("Enter the radius to compute the area and circumference");
+        radius = sc.nextDouble();
+        cir = new Circle(radius);
+        System.out.println("A new circle is created");
 	    }
 	    else if (option == 2) {
-		if (cir != null)
-		    cir.printArea();
+        if (cir != null)
+          cir.printArea();
 	    }
 	    else if (option == 3) {
-		if (cir != null)
-		    cir.printCircumference();
+        if (cir != null)
+          cir.printCircumference();
 	    }
-	} while (option < 4);
-	System.out.println("Thank you!!");	
-    }
+    } while (option < 4);
+    System.out.println("Thank you!!");
+  }
 }
