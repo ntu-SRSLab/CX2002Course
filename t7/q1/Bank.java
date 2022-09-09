@@ -9,13 +9,13 @@ public class Bank {
     // Important: in order for method to access account
     // means account is an instance variable of CheckingAccount class
     if (balance < amount) {
-	    account.addInsuffientFundFee();
+      account.addInsuffientFundFee();
 
-	    // note typo in diagram, have to follow diagram as it is common source for all
-	    account.noteReturnedCheck(theCheck);
-	    returnCheck(theCheck);
+      // note typo in diagram, have to follow diagram as it is common source for all
+      account.noteReturnedCheck(theCheck);
+      returnCheck(theCheck);
 
-	    return -1;
+      return -1;
     }
 
     int checkNumber = theCheck.getCheckNumber();
