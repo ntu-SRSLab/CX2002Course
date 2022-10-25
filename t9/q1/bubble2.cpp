@@ -1,6 +1,5 @@
 #include <iostream>
 
-// using namespace std;
 void bubble(int a[], int n)
 {
   int i, j, t;
@@ -16,7 +15,7 @@ void bubble(int a[], int n)
       }
     }
   }
-} //end function.
+}
 
 int main()
 {
@@ -36,4 +35,4 @@ int main()
   std::cout << "\n\n Finally sorted array is: ";
   for (i = 0; i <= n - 1; i++)
     std::cout << a[i] << " ";
-} //end program.
+}
