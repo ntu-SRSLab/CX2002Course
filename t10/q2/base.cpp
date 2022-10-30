@@ -7,7 +7,7 @@ public:
   void show(void) { cout << " \n I am in base class..";  }
 };
 
-class DC :public BC {
+class DC : public BC {
 public:
   void show(void) { cout << " \n I am in derived class..";  }
 };
