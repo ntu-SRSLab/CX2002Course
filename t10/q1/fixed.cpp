@@ -3,18 +3,18 @@
 using namespace std;
 
 class A {
-protected :
+protected:
   int a, b;
 
-public :
+public:
   A (int x, int y) { // rightmost for default value
-    a = x ;
-    b = y ;
+    a = x;
+    b = y;
   }
 
-  virtual void print() ;
+  virtual void print();
 
-  friend int doubleIt(A a);  // use ‘friend’ to show, but not gd practice
+  friend int doubleIt(A a);  // use ‘friend’ to show, but not good practice
 
   A operator+(const A _a) const {
     int aa = a + _a.a;
@@ -28,7 +28,7 @@ class B: public A {
 private:
   float p, q;
 
-public :
+public:
   B(int m, int n, float u, float v) : A(m, n) {
     p = u;
     q = v;
