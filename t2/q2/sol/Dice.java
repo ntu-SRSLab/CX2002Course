@@ -1,5 +1,5 @@
 public class Dice {
-  private int valueOfDice = 1;
+  private int valueOfDice = 0;
 
   public Dice() {
     setDiceValue();
