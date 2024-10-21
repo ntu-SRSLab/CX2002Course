@@ -3,6 +3,7 @@
 void bubble(int a[], int n)
 {
   int i, j, t;
+
   for (i = n - 2; i >= 0; i--)
   {
     for (j = 0; j <= i; j++)
