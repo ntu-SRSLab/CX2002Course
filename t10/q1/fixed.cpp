@@ -16,6 +16,8 @@ public:
 
   friend int doubleIt(A a);  // use ‘friend’ to show, but not good practice
 
+  // friend A operator+(const A _a1, const A _a2);
+  
   A operator+(const A _a) const {
     int aa = a + _a.a;
     int bb = b + _a.b;
@@ -23,6 +25,13 @@ public:
     return A(aa, bb);
   }
 };
+
+// A operator+(const A _a1, const A _a2) {
+//   int aa = _a1.a + _a2.a;
+//   int bb = _a1.b + _a2.b;
+
+//   return A(aa, bb);
+// }
 
 class B: public A {
 private:
