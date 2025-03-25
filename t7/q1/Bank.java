@@ -3,15 +3,15 @@ public class Bank {
   private CheckingAccount account;
 
   public double cashCheck(Check theCheck) {
+    
     double amount = theCheck.getAmount();
+
+    // Important: in order for method to access account means account is an
+    // instance variable of CheckingAccount class
     double balance = account.getBalance();
 
-    // Important: in order for method to access account
-    // means account is an instance variable of CheckingAccount class
     if (balance < amount) {
-      account.addInsuffientFundFee();
-
-      // note typo in diagram, have to follow diagram as it is common source for all
+      account.addInsufficientFundFee();
       account.noteReturnedCheck(theCheck);
       returnCheck(theCheck);
 
